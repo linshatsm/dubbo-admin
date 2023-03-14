@@ -17,9 +17,13 @@ dubbo-admin:
   enabled: true
   default: true
   properties:
-    admin.registry.address: zookeeper://zookeeper:2181
+    # admin.registry.address: zookeeper://zookeeper:2181
     admin.config-center: zookeeper://zookeeper:2181
-    admin.metadata-report.address: zookeeper://zookeeper:2181
+    # admin.metadata-report.address: zookeeper://zookeeper:2181
+    # https://github.com/apache/dubbo-admin/wiki/Dubbo-Admin-configuration
+    dubbo.registry.address: zookeeper://zookeeper:2181
+    dubbo.metadata-report.address: zookeeper://zookeeper:2181
+
     admin.root.user.name: root
     admin.root.user.password: root
     admin.check.sessionTimeoutMilli: 3600000
