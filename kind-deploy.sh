@@ -12,4 +12,7 @@ helm install dubbo-admin -f ./charts/admin-stack/values.yaml --namespace dubbo-d
 
 # port-forward
 kubectl -n dubbo-demo port-forward svc/dubbo-admin 8080:38080
+# zookeeper port-forward
 # kubectl -n dubbo-demo port-forward svc/zookeeper 2181:2181
+# nacos port-forward
+# kubectl -n dubbo-demo port-forward svc/nacos 8848:8848
